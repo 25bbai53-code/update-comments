@@ -1,0 +1,44 @@
+Enter password: ***************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 24
+Server version: 8.0.44 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use anshika;
+Database changed
+mysql> create table employee
+    -> (emp_id varchar(30),
+    -> emp_name varchar(50),
+    -> emp_designation varchar(50),
+    -> emp_age int);
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> insert into employee values(
+    -> 1,'a','hr',26),
+    -> (2,'b','ds',34),
+    -> (3,'c','da',32),
+    -> (4,'d','se',35),
+    -> ('e5','t','de',45);
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> update employee set emp_name='ad',emp_age=24
+    -> where emp_id=1;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> delete from employee where emp_id='e5';
+Query OK, 1 row affected (0.02 sec)
+
+mysql> alter table employee add emp_dept varchar(30),
+    -> add emp_location varchar(25)
+    -> ;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
