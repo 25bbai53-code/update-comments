@@ -11,7 +11,7 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql> use anshika;
+mysql> use sinchana;
 Database changed
 mysql> create table employee
     -> (emp_id varchar(30),
@@ -41,4 +41,5 @@ mysql> alter table employee add emp_dept varchar(30),
     -> add emp_location varchar(25)
     -> ;
 Query OK, 0 rows affected (0.04 sec)
+
 Records: 0  Duplicates: 0  Warnings: 0
